@@ -17,6 +17,12 @@ stages:
     steps:
       - type: checkout
       - type: shell
+        name: PWD
+        command: pwd
+      - type: shell
+        name: LS
+        command: ls -la
+      - type: shell
         name: Install Yarn
         command: |
           apt-key adv --fetch-keys http://dl.yarnpkg.com/debian/pubkey.gpg
