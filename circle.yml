@@ -1,7 +1,7 @@
 version: 2
 executorType: docker
 containerInfo:
-  - image: rails:4.2.5.2
+  - image: tomee:8-jre-1.7.4-webprofile
     env:
       - FLASK_CONFIG=testing
       - DATABASE_URL=postgresql://ubuntu@localhost/circle_test?sslmode=disable
