@@ -12,6 +12,7 @@ containerInfo:
       - POSTGRES_PASSWORD=
 stages:
   build:
+    parallel: 5    
     workDir: /home/ubuntu/cci-demo-flask
     steps:
       - type: checkout
