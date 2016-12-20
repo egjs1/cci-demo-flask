@@ -1,7 +1,7 @@
 version: 2
 executorType: docker
 containerInfo:
-  - image: azure-cli:0.9.13
+  - image: rails:4.2.5.2
     env:
       - FLASK_CONFIG=testing
       - DATABASE_URL=postgresql://ubuntu@localhost/circle_test?sslmode=disable
