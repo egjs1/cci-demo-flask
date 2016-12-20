@@ -1,7 +1,7 @@
 version: 2
 executorType: docker
 containerInfo:
-  - image: python:3.5
+  - image: azure-cli:0.9.13
     env:
       - FLASK_CONFIG=testing
       - DATABASE_URL=postgresql://ubuntu@localhost/circle_test?sslmode=disable
@@ -12,7 +12,7 @@ containerInfo:
       - POSTGRES_PASSWORD=
 stages:
   build:
-    parallel: 5    
+    parallel: 5
     workDir: /home/ubuntu/cci-demo-flask
     steps:
       - type: checkout
